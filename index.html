@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2bb2f2a2a8.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,33 +25,33 @@
     </div>
 
     <div class="presentation">
-        <div class="titre1">Réservez le menu qui vous convient</div>
-        <div class="titre2">Découvrez des restaurants d'exeption, selectionnés par nos soins.</div>
+        <div class="titre1 titre1__principal">Réservez le menu qui vous convient</div>
+        <div class="titre1__description">Découvrez des restaurants d'exeption, selectionnés par nos soins.</div>
         <button class="btn">Explorer nos restaurants</button>
     </div>
 
 
     <!-- FONCTIONNEMENT -->
-    <div class="fonctionnement">
+    <div class="fonctionnements__bloc">
         <div class="titre1">Fonctionnement</div>
 
-        <div class="fonctionnement__liste">
+        <div class="fonctionnements__liste">
 
-            <div class="btnlarge btnlarge--blanc">
-                <div class="numero1">1</div>
-                <i></i>
+            <div class="fonctionnement fonctionnement--gris">
+                <div class="fonctionnement__numero">1</div>
+                <i class="fas fa-mobile-alt"></i>
                 <div class="fonctionnement__txt">Choisissez un restaurant</div>
             </div>
 
-            <div class="btnlarge btnlarge--beige">
-                <div class="numero1">2</div>
-                <i></i>
+            <div class="fonctionnement fonctionnement--beige">
+                <div class="fonctionnement__numero">2</div>
+                <i class="fas fa-bars"></i>
                 <div class="fonctionnement__txt">Composez votre menu</div>
             </div>
 
-            <div class="btnlarge btnlarge--violet">
-                <div class="numero1">3</div>
-                <i></i>
+            <div class="fonctionnement fonctionnement--violet">
+                <div class="fonctionnement__numero">3</div>
+                <i class="fas fa-store "></i>
                 <div class="fonctionnement__txt">Dégustez au restaurant</div>
             </div>
         </div>
@@ -54,52 +59,52 @@
     </div>
 
       <!-- RESTAURANTS -->
-      <div class="restaurants">
+      <div class="restaurants__bloc">
         <div class="titre1">Restaurants</div>
 
         <div class="restaurants__liste">
 
-            <div class="restaurants__pub">
-                <img src="" alt="">
-                <div class="restaurants__footer">
-                    <div class="restaurants__info"> 
-                        <div class="restaurants__nom">La palette du goût</div>
-                        <div class="restaurants__lieu">Ménilmontant</div>
+            <div class="restaurant">
+                <div class="image1"></div>
+                <div class="restaurant__footer">
+                    <div class="restaurant__info"> 
+                        <div class="restaurant__info__nom">La palette du goût</div>
+                        <div class="restaurant__info__lieu">Ménilmontant</div>
                     </div>
-                    <i></i>
+                    <i class="far fa-heart"></i>
                 </div> 
             </div>
 
-            <div class="restaurants__pub">
-                <img src="" alt="">
-                <div class="restaurants__footer">
-                    <div class="restaurants__info"> 
-                        <div class="restaurants__nom">La note enchantée</div>
-                        <div class="restaurants__lieu">Charonne</div>
+            <div class="restaurant">
+                <div class="image2"></div>
+                <div class="restaurant__footer">
+                    <div class="restaurant__info"> 
+                        <div class="restaurant__info__nom">La note enchantée</div>
+                        <div class="restaurant__info__lieu">Charonne</div>
                     </div>
-                    <i></i>
+                    <i class="far fa-heart"></i>
                 </div> 
             </div>
 
-            <div class="restaurants__pub">
-                <img src="" alt="">
-                <div class="restaurants__footer">
-                    <div class="restaurants__info"> 
-                        <div class="restaurants__nom">A la française</div>
-                        <div class="restaurants__lieu">Cité rouge</div>
+            <div class="restaurant">
+                <div class="image3"></div>
+                <div class="restaurant__footer">
+                    <div class="restaurant__info"> 
+                        <div class="restaurant__info__nom">A la française</div>
+                        <div class="restaurant__info__lieu">Cité rouge</div>
                     </div>
-                    <i></i>
+                    <i class="far fa-heart"></i>
                 </div> 
             </div>
 
-            <div class="restaurants__pub">
-                <img src="" alt="">
-                <div class="restaurants__footer">
-                    <div class="restaurants__info"> 
-                        <div class="restaurants__nom">Le délice des sens</div>
-                        <div class="restaurants__lieu">Folie-Méricourt</div>
+            <div class="restaurant">
+                <div class="image4"></div>
+                <div class="restaurant__footer">
+                    <div class="restaurant__info"> 
+                        <div class="restaurant__info__nom">Le délice des sens</div>
+                        <div class="restaurant__info__lieu">Folie-Méricourt</div>
                     </div>
-                    <i></i>
+                    <i class="far fa-heart"></i>
                 </div> 
             </div>
          </div>
@@ -108,20 +113,21 @@
     <!-- FOOTER -->
 
     <footer>
-        <div class="footer__titre">ohmyfood</div>
+        <div class="logo logo--smallwhite">ohmyfood</div>
+        
         <div class="footer__proposer">
-            <i></i>
+            <i class="fas fa-utensils"></i>
             <p>Proposer un restaurant</p>
         </div>
 
         <div class="footer__devenir">
-            <i></i>
-            <p>devenir partenaire</p>
+            <i class="fas fa-hands-helping"></i>
+            <p>Devenir partenaire</p>
         </div>
 
-        <div class="footer__mentions">Mentions légales</div>
+        <div class="footer__mentions"><p> Mentions légales</p></div>
 
-        <div class="footer__contact">Contact.</div>
+        <div class="footer__contact"><p> Contact</p></div>
 
     </footer>
 

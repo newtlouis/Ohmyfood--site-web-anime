@@ -1,0 +1,28 @@
+footer{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(43, 43, 43);
+    padding: 5%;
+
+    
+    & i{
+        margin-right: 2%;
+        width: 5%;
+    }
+    
+}
+
+.logo--smallwhite{
+    margin-bottom: 3vw;
+}
+
+.footer__proposer,.footer__devenir,.footer__contact{
+    display: flex;
+    margin: 1vw 0;
+}
+.footer__mentions{
+    margin: 1.5vw 0 1vw 0;
+}
+

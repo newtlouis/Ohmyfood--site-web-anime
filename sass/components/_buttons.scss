@@ -1,0 +1,145 @@
+
+// BOUTON ACCUEIL
+
+.btn{
+    width: 50%;
+    align-items: center;
+    margin:3vw 25% 10vw 25%;
+    padding: 3.5vw 5%;
+
+    color:$greylight__backgroung;
+    font-size: 3.5vw;
+
+    border-radius: 10vw;
+    border-style: none;
+    box-shadow:1px 1vw 1vw rgb(202, 202, 202);
+
+
+    background:linear-gradient(to top left,$primary__color,$secondary__color);
+
+}
+
+// ETAPE FONCTIONNEMENT
+
+.fonctionnement{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   
+
+    width: 90%;
+    padding: 6vw 5%;
+    margin: 3vw 3% 3vw 7% ;
+    border-radius: 4vw;
+    box-shadow:1px 1vw 1vw rgb(202, 202, 202);
+
+    background-color: $greylight__backgroung;
+    
+
+    &--beige{
+        background-color: $grey__backgroung;
+        }
+    &--violet{
+        background-color: lighten($color:$primary__color, $amount: 35);
+        
+        & i{
+            color: $primary__color;
+        }
+    }
+
+    &__numero{
+        color: white;
+        font-size: 4vw;
+        background-color: $primary__color;
+        padding: 3% 4.5%;
+        clip-path: circle(45% at 50% 50% );
+        text-align: center;
+        margin: 0 4%;
+        position: relative;
+        left: -15.5%;
+    }
+
+    & i{
+        font-size: 5vw;
+        color:lighten($color: $grey__txt, $amount: 20) ;
+        margin: 0 4%;
+        position: relative;
+        left: -15.5%;  
+    }
+
+    & magasin{
+        color: $primary__color;
+    }
+
+    &__txt{
+        font-size: 4vw;
+        font-weight: bold;
+        margin: 0 0 0 4%;
+        position: relative;
+        left: -15.5%;
+    }
+}
+
+// ANNONCE RESTAURANT
+.restaurant{
+    display: flex;
+    flex-direction: column;
+
+
+    width: 100%;
+    padding: 0;
+    margin: 3vw 0;
+    border-radius: 4vw;
+    box-shadow:1px 1vw 1vw rgb(202, 202, 202);
+    background-color: $greylight__backgroung;
+
+      &__footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3vw 5%;
+    }
+
+}
+
+.image1{
+    background-image:url(/images/1.jpg);
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 4vw 4vw 0 0;
+    height: 40vw;
+}
+
+.image2{
+    background-image:url(/images/2.jpg);
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 4vw 4vw 0 0;
+    height: 40vw;
+}
+
+.image3{
+    background-image:url(/images/3.jpg);
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 4vw 4vw 0 0;
+    height: 40vw;
+}
+
+.image4{
+    background-image:url(/images/4.jpg);
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 4vw 4vw 0 0;
+    height: 40vw;
+}
+
+
+
+

@@ -1,5 +1,263 @@
-body {
-  background-color: yellow;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: none;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 6vw;
+  text-align: center;
+}
+.logo--smallwhite {
+  color: #f1f1f1;
+  font-size: 5vw;
+  text-align: left;
+}
+
+.lieu {
+  text-align: center;
+  font-weight: bold;
+  color: #424242;
+  font-size: 3.5vw;
+}
+
+.titre1 {
+  font-size: 5vw;
+  font-weight: bolder;
+}
+.titre1__principal {
+  text-align: center;
+}
+
+.titre1__description {
+  font-size: 4vw;
+  font-weight: 100;
+  color: #424242;
+  text-align: center;
+}
+
+.restaurant__info__nom {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.restaurant__info__lieu {
+  font-size: 5vw;
+  font-weight: 100;
+}
+
+footer p, footer i {
+  color: #e7e6e6;
+  font-size: 3vw;
+}
+
+.footer__proposer, .footer__devenir {
+  font-weight: bold;
+}
+
+.btn {
+  width: 50%;
+  align-items: center;
+  margin: 3vw 25% 10vw 25%;
+  padding: 3.5vw 5%;
+  color: #f1f1f1;
+  font-size: 3.5vw;
+  border-radius: 10vw;
+  border-style: none;
+  box-shadow: 1px 1vw 1vw #cacaca;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+  padding: 6vw 5%;
+  margin: 3vw 3% 3vw 7%;
+  border-radius: 4vw;
+  box-shadow: 1px 1vw 1vw #cacaca;
+  background-color: #f1f1f1;
+}
+.fonctionnement--beige {
+  background-color: #e7e6e6;
+}
+.fonctionnement--violet {
+  background-color: #f2eafb;
+}
+.fonctionnement--violet i {
+  color: #9356DC;
+}
+.fonctionnement__numero {
+  color: white;
+  font-size: 4vw;
+  background-color: #9356DC;
+  padding: 3% 4.5%;
+  clip-path: circle(45% at 50% 50%);
+  text-align: center;
+  margin: 0 4%;
+  position: relative;
+  left: -15.5%;
+}
+.fonctionnement i {
+  font-size: 5vw;
+  color: #757575;
+  margin: 0 4%;
+  position: relative;
+  left: -15.5%;
+}
+.fonctionnement magasin {
+  color: #9356DC;
+}
+.fonctionnement__txt {
+  font-size: 4vw;
+  font-weight: bold;
+  margin: 0 0 0 4%;
+  position: relative;
+  left: -15.5%;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 3vw 0;
+  border-radius: 4vw;
+  box-shadow: 1px 1vw 1vw #cacaca;
+  background-color: #f1f1f1;
+}
+.restaurant__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3vw 5%;
+}
+
+.image1 {
+  background-image: url(/images/1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 4vw 4vw 0 0;
+  height: 40vw;
+}
+
+.image2 {
+  background-image: url(/images/2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 4vw 4vw 0 0;
+  height: 40vw;
+}
+
+.image3 {
+  background-image: url(/images/3.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 4vw 4vw 0 0;
+  height: 40vw;
+}
+
+.image4 {
+  background-image: url(/images/4.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 4vw 4vw 0 0;
+  height: 40vw;
+}
+
+header {
+  text-align: center;
+  margin: 0;
+  padding: 1vw;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2b2b2b;
+  padding: 5%;
+}
+footer i {
+  margin-right: 2%;
+  width: 5%;
+}
+
+.logo--smallwhite {
+  margin-bottom: 3vw;
+}
+
+.footer__proposer, .footer__devenir, .footer__contact {
+  display: flex;
+  margin: 1vw 0;
+}
+
+.footer__mentions {
+  margin: 1.5vw 0 1vw 0;
+}
+
+.lieu {
+  padding: 3vw;
+  background-color: #e7e6e6;
+}
+
+.presentation {
+  background-color: #f1f1f1;
+}
+
+.titre1__principal {
+  padding: 5vw 20% 2vw 20%;
+}
+
+.titre1__description {
+  margin: 1vw 10% 3vw 10%;
+}
+
+.fonctionnements__bloc {
+  padding: 15vw 5%;
+}
+
+.fonctionnements__bloc .titre1 {
+  margin: 3vw 0;
+}
+
+.fonctionnements__liste {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurants__bloc {
+  padding: 15vw 5%;
+  background-color: #e7e6e6;
+}
+
+.restaurants__bloc .titre1 {
+  margin: 3vw 0;
+}
+
+.restaurants__liste {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant__info__nom {
+  margin: 1.5vw 0;
+}
+
+.restaurant i {
+  font-size: 5vw;
 }
 
 /*# sourceMappingURL=style.css.map */
