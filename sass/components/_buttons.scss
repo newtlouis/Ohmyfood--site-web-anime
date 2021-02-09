@@ -104,38 +104,9 @@
 
 }
 
-.image1{
-    background-image:url(/images/1.jpg);
-
-    background-size: cover;
-    background-position: center;
-    border-radius: 4vw 4vw 0 0;
-    height: 40vw;
-}
-
-.image2{
-    background-image:url(/images/2.jpg);
-
-    background-size: cover;
-    background-position: center;
-    border-radius: 4vw 4vw 0 0;
-    height: 40vw;
-}
-
-.image3{
-    background-image:url(/images/3.jpg);
-
-    background-size: cover;
-    background-position: center;
-    border-radius: 4vw 4vw 0 0;
-    height: 40vw;
-}
-
-.image4{
-    background-image:url(/images/4.jpg);
-
-    background-size: cover;
-    background-position: center;
+.image1,.image2,.image3.image4{
+    object-fit: cover;
+    object-position: center;
     border-radius: 4vw 4vw 0 0;
     height: 40vw;
 }
