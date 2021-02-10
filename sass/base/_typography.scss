@@ -1,5 +1,13 @@
 *{
     font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    background-color:$grey__backgroung;}
+
+html{
+    font-size: 4vw;
 }
 
 
@@ -7,9 +15,9 @@
 
 .logo{
     font-family: 'Shrikhand', cursive;
-    font-size: 6vw;
+    font-size: 2rem;
     text-align: center;
-
+ 
     &--smallwhite{
         color: $greylight__backgroung;
         font-size: 5vw;
@@ -17,15 +25,22 @@
     }
 }
 
+h1{font-family: 'Shrikhand', cursive;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: normal;
+
+}
+
 .lieu{
     text-align: center;
     font-weight: bold;
     color: $grey__txt;
-    font-size: 3.5vw;
+    font-size: 1rem;
 }
 
 .titre1{
-    font-size: 5vw;
+    font-size: 1.5rem;
     font-weight: bolder;
 
     &__principal{
@@ -34,11 +49,24 @@
     
 }
 .titre1__description{
-    font-size: 4vw;
+    font-size: 1.2rem;
     font-weight:100;
     color:$grey__txt ;
     text-align: center;
 }
+
+// BOUTON
+
+.btn{
+    font-size: 1.1rem;
+    color:$greylight__backgroung;    
+}
+
+// FONCTIONNEMENT
+
+.fonctionnement__txt{
+    font-size: 4vw;
+    font-weight: bold;}
 
 
 // RESTAURANT
@@ -67,3 +95,32 @@ footer{
 .footer__proposer,.footer__devenir{
     font-weight: bold;
 }
+
+
+
+
+// PAGE RESTAURANT
+
+// Titre entrées, plats, desserts
+
+.entrees__titre,.plats__titre,.desserts__titre{
+    display: inline-block;
+    text-transform: uppercase;
+    border-style: none none solid none;
+    border-color: $tertiary__color;
+    font-size: 1.1rem;
+
+    padding-bottom: 1vw;
+    margin-top: 8vw;
+
+}
+
+// Nom plat
+
+.plat__nom{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.plat__prix{
+    font-weight: bolder;}

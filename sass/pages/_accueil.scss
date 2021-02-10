@@ -1,0 +1,67 @@
+
+// ACCUEIL
+
+.lieu{
+    padding: 4vw;
+    background-color: $grey__backgroung;
+}
+
+.presentation{
+    background-color: $greylight__backgroung;
+    padding-bottom: 6vw;
+}
+
+.titre1__principal{
+    padding: 5vw 15% 2vw 15%;
+
+}
+
+.titre1__description{
+    margin: 1.3vw 7% 4vw 7%;
+}
+
+
+// FONCTIONNEMENT
+
+.fonctionnements__bloc{
+    padding: 15vw 8%;
+}
+
+.fonctionnements__bloc .titre1{
+    margin: 3vw 0;
+}
+
+.fonctionnements__liste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// RESTAURANT
+
+.restaurants__bloc{
+    padding: 15vw 5%;
+    background-color: $grey__backgroung;
+}
+
+.restaurants__bloc .titre1{
+    margin: 3vw 0;}
+
+
+
+.restaurants__liste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.restaurant__info__nom{
+    margin: 1.5vw 0;
+}
+
+.restaurant i{
+    font-size: 5vw;
+}

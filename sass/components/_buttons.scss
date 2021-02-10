@@ -2,14 +2,12 @@
 // BOUTON ACCUEIL
 
 .btn{
-    width: 50%;
+    width: 60%;
     align-items: center;
-    margin:3vw 25% 10vw 25%;
-    padding: 3.5vw 5%;
+    margin:3vw 20% 10vw 20%;
+    padding: 3.8vw 3%;
 
-    color:$greylight__backgroung;
-    font-size: 3.5vw;
-
+      
     border-radius: 10vw;
     border-style: none;
     box-shadow:1px 1vw 1vw rgb(202, 202, 202);
@@ -29,10 +27,10 @@
    
 
     width: 90%;
-    padding: 6vw 5%;
+    padding: 4.5vw 5%;
     margin: 3vw 3% 3vw 7% ;
-    border-radius: 4vw;
-    box-shadow:1px 1vw 1vw rgb(202, 202, 202);
+    border-radius: 5vw;
+    box-shadow:1px 1vw 1vw rgb(223, 222, 222);
 
     background-color: $greylight__backgroung;
     
@@ -50,10 +48,10 @@
 
     &__numero{
         color: white;
-        font-size: 4vw;
+        font-size: 3.5vw;
         background-color: $primary__color;
         padding: 3% 4.5%;
-        clip-path: circle(45% at 50% 50% );
+        clip-path: circle(40% at 50% 50% );
         text-align: center;
         margin: 0 4%;
         position: relative;
@@ -68,13 +66,8 @@
         left: -15.5%;  
     }
 
-    & magasin{
-        color: $primary__color;
-    }
-
+ 
     &__txt{
-        font-size: 4vw;
-        font-weight: bold;
         margin: 0 0 0 4%;
         position: relative;
         left: -15.5%;
@@ -93,6 +86,13 @@
     border-radius: 4vw;
     box-shadow:1px 1vw 1vw rgb(202, 202, 202);
     background-color: $greylight__backgroung;
+    
+    &__image{
+        object-fit: cover;
+    object-position: center;
+    border-radius: 4vw 4vw 0 0;
+    height: 40vw;
+    }
 
       &__footer{
         display: flex;
@@ -104,12 +104,33 @@
 
 }
 
-.image1,.image2,.image3.image4{
-    object-fit: cover;
-    object-position: center;
-    border-radius: 4vw 4vw 0 0;
-    height: 40vw;
+// PLAT
+.plat{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 4vw 0;
+    padding: 3vw 3%;
+
+    background-color: $greylight__backgroung;
+
+    border-radius: 4vw;
+    box-shadow:1px 1vw 1vw rgb(218, 218, 218);
+
+    &__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    &__prix{
+        padding-right: 4%;
+    }
 }
+
+
 
 
 
