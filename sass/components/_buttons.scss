@@ -112,12 +112,20 @@
     gap: 5px;
     margin: 4vw 0;
     padding: 3vw 3%;
+    cursor: pointer;
 
     background-color: $greylight__backgroung;
-
     border-radius: 4vw;
     box-shadow:1px 1vw 1vw rgb(218, 218, 218);
 
+    // transition
+    
+   animation: apparition 0.8s ease-out 0.5s backwards;
+   @for $i from 1 through 9{
+       &--#{$i}{
+           animation-delay: 0.1s*$i;
+       }
+   }
     &__info{
         display: flex;
         flex-direction: row;
