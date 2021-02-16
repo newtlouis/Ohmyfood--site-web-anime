@@ -27,16 +27,16 @@
    
 
     width: 90%;
-    padding: 4.5vw 5%;
-    margin: 3vw 3% 3vw 7% ;
+    padding: 5vw 5%;
+    margin: 3vw 3% 4vw 7% ;
     border-radius: 5vw;
     box-shadow:1px 1vw 1vw rgb(223, 222, 222);
 
-    background-color: $greylight__backgroung;
+    background-color: rgb(248, 248, 248);
     
 
     &--beige{
-        background-color: $grey__backgroung;
+        background-color: rgb(241, 241, 241);
         }
     &--violet{
         background-color: lighten($color:$primary__color, $amount: 35);
@@ -84,7 +84,7 @@
     padding: 0;
     margin: 3vw 0;
     border-radius: 4vw;
-    box-shadow:1px 1vw 1vw rgb(202, 202, 202);
+    box-shadow:1px 1vw 1vw rgb(233, 233, 233);
     background-color: $greylight__backgroung;
     cursor: pointer;
     
@@ -92,7 +92,7 @@
         object-fit: cover;
     object-position: center;
     border-radius: 4vw 4vw 0 0;
-    height: 40vw;
+    height: 45vw;
     }
 
       &__footer{
@@ -100,7 +100,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 3vw 5%;
+        padding: 2.5vw 5%;
     }
 
 }

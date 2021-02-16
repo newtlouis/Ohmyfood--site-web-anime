@@ -3,4 +3,10 @@ header{
     margin: 0;
     padding: 3.5vw 0 1.5vw 0;
     background-color: $greylight__backgroung;
+    
+}
+
+.separation{
+    height: 1vw;
+    background:linear-gradient(to bottom, rgb(201, 201, 201),rgb(241, 241, 241)) ;
 }

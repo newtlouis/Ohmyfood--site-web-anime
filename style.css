@@ -23,7 +23,7 @@ a {
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #e9e9e9;
 }
 
 html {
@@ -91,7 +91,7 @@ h1 {
 }
 
 footer p, footer i {
-  color: #f1f1f1;
+  color: #e9e9e9;
   font-size: 3vw;
 }
 
@@ -135,11 +135,11 @@ footer p, footer i {
   justify-content: flex-start;
   align-items: center;
   width: 90%;
-  padding: 4.5vw 5%;
-  margin: 3vw 3% 3vw 7%;
+  padding: 5vw 5%;
+  margin: 3vw 3% 4vw 7%;
   border-radius: 5vw;
   box-shadow: 1px 1vw 1vw #dfdede;
-  background-color: #fdfdfd;
+  background-color: #f8f8f8;
 }
 .fonctionnement--beige {
   background-color: #f1f1f1;
@@ -181,7 +181,7 @@ footer p, footer i {
   padding: 0;
   margin: 3vw 0;
   border-radius: 4vw;
-  box-shadow: 1px 1vw 1vw #cacaca;
+  box-shadow: 1px 1vw 1vw #e9e9e9;
   background-color: #fdfdfd;
   cursor: pointer;
 }
@@ -189,14 +189,14 @@ footer p, footer i {
   object-fit: cover;
   object-position: center;
   border-radius: 4vw 4vw 0 0;
-  height: 40vw;
+  height: 45vw;
 }
 .restaurant__footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 3vw 5%;
+  padding: 2.5vw 5%;
 }
 
 .plat {
@@ -289,6 +289,11 @@ header {
   background-color: #fdfdfd;
 }
 
+.separation {
+  height: 1vw;
+  background: linear-gradient(to bottom, #c9c9c9, #f1f1f1);
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -316,12 +321,14 @@ footer i {
 
 .lieu {
   padding: 4vw;
-  background-color: #f1f1f1;
+  background-color: #e9e9e9;
+  box-shadow: 10px 10px 10px black;
 }
 
 .presentation {
-  background-color: #fdfdfd;
+  background-color: #f3f3f3;
   padding-bottom: 6vw;
+  padding: 5vw 0;
 }
 
 .titre1__principal {
@@ -333,11 +340,12 @@ footer i {
 }
 
 .fonctionnements__bloc {
-  padding: 15vw 8%;
+  padding: 12vw 8%;
+  background-color: #fdfdfd;
 }
 
 .fonctionnements__bloc .titre1 {
-  margin: 3vw 0;
+  margin: 0 0 4vw 0;
 }
 
 .fonctionnements__liste {
@@ -348,12 +356,12 @@ footer i {
 }
 
 .restaurants__bloc {
-  padding: 15vw 5%;
-  background-color: #f1f1f1;
+  padding: 13vw 5%;
+  background-color: #f3f3f3;
 }
 
 .restaurants__bloc .titre1 {
-  margin: 3vw 0;
+  margin: 2vw 0;
 }
 
 .restaurants__liste {
@@ -380,7 +388,7 @@ footer i {
 .menu {
   padding: 0 5%;
   border-radius: 12vw 12vw 0 0;
-  background-color: #f1f1f1;
+  background-color: #e9e9e9;
   position: relative;
   bottom: 13vw;
 }
