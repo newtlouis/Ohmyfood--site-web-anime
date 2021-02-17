@@ -1,13 +1,14 @@
 *{
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;   
 }
-
-body{
-    background-color:$grey__backgroung;}
 
 html{
     font-size: 4vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -120,6 +121,11 @@ footer{
 .plat__nom{
     font-size: 1.2rem;
     font-weight: bolder;
+}
+
+.plat__ingredients{
+    transition: all 1s 0.3s;
+
 }
 
 .plat__prix{

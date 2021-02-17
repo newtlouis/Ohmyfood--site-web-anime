@@ -79,9 +79,6 @@
     display: flex;
     flex-direction: column;
 
-
-    width: 100%;
-    padding: 0;
     margin: 3vw 0;
     border-radius: 4vw;
     box-shadow:1px 1vw 1vw rgb(233, 233, 233);
@@ -110,8 +107,10 @@
     
     display: flex;
     flex-direction: row;
+    justify-content:unsafe;
     align-items:center;
-    
+
+    width: 100%;
     margin: 4vw 0;
     padding-left:  3% ;
     cursor: pointer;
@@ -125,44 +124,60 @@
     
 
     // transition
-    
    animation: apparition 0.8s ease-out 0.5s backwards;
    @for $i from 1 through 9{
        &--#{$i}{
            animation-delay: 0.1s*$i;
        }
    }
+
+//    INFO
     &__info{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 50vw;
+        width: 80%;
         padding: 4% 0;
+
+        white-space: nowrap;
+        // overflow:hidden;
         text-overflow: ellipsis;
-        // background-color: aquamarine;
+        transition: all 1s 0.3s ;
+    }
+
+    &__ingredients{
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+
+        transition: all 1s 3s;
+    
+    }
+    &__nom{
+        white-space: nowrap;
+        
     }
 
     &__prix{
         text-align: center;
         position: relative;
         top: 3vw;
-        left: 18vw;
-        width: 30vw; 
-        background-color: $greylight__backgroung;
+        left: 7vw;
+        padding: 0 2% 0 0;
+        width: 10vw; 
 
         transform: translateX(0);
-        transition: all 1s 0.3s ;
-        // background-color: antiquewhite;       
+        transition: all 1s 0.3s ;  
     }
 
     &__ok{
         background-color:$tertiary__color;
-        width: 30vw;
+        width: 0;
         transform: translateX(0);
         transition: all 1s 0.3s ;
         text-align: center;
         position: relative;
-        left: 18vw;
+        left: 7vw;
     }
 
     & i{
@@ -181,10 +196,20 @@
         transform: rotate(0deg);
         }
         .plat__ok,.plat__prix{
-            
-            transform: translateX(-18vw);
+            transform: translateX(-7vw);
+        }
+        .plat__ok{
+            width: 20%;
+        }
+        
 
-
+        .plat__info{
+            width: 67%;
+        }
+        .plat__ingredients{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 

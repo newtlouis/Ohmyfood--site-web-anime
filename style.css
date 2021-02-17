@@ -14,20 +14,21 @@
   box-sizing: none;
 }
 
-a {
-  text-decoration: none;
+body {
+  background-color: #e9e9e9;
 }
 
 * {
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background-color: #e9e9e9;
-}
-
 html {
   font-size: 4vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .logo {
@@ -114,6 +115,10 @@ footer p, footer i {
   font-weight: bolder;
 }
 
+.plat__ingredients {
+  transition: all 1s 0.3s;
+}
+
 .plat__prix {
   font-weight: bolder;
 }
@@ -177,8 +182,6 @@ footer p, footer i {
 .restaurant {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 0;
   margin: 3vw 0;
   border-radius: 4vw;
   box-shadow: 1px 1vw 1vw #e9e9e9;
@@ -202,7 +205,9 @@ footer p, footer i {
 .plat {
   display: flex;
   flex-direction: row;
+  justify-content: unsafe;
   align-items: center;
+  width: 100%;
   margin: 4vw 0;
   padding-left: 3%;
   cursor: pointer;
@@ -245,28 +250,39 @@ footer p, footer i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50vw;
+  width: 80%;
   padding: 4% 0;
+  white-space: nowrap;
   text-overflow: ellipsis;
+  transition: all 1s 0.3s;
+}
+.plat__ingredients {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 1s 3s;
+}
+.plat__nom {
+  white-space: nowrap;
 }
 .plat__prix {
   text-align: center;
   position: relative;
   top: 3vw;
-  left: 18vw;
-  width: 30vw;
-  background-color: #fdfdfd;
+  left: 7vw;
+  padding: 0 2% 0 0;
+  width: 10vw;
   transform: translateX(0);
   transition: all 1s 0.3s;
 }
 .plat__ok {
   background-color: #99E2D0;
-  width: 30vw;
+  width: 0;
   transform: translateX(0);
   transition: all 1s 0.3s;
   text-align: center;
   position: relative;
-  left: 18vw;
+  left: 7vw;
 }
 .plat i {
   font-size: 1.5rem;
@@ -279,7 +295,18 @@ footer p, footer i {
   transform: rotate(0deg);
 }
 .plat:hover .plat__ok, .plat:hover .plat__prix {
-  transform: translateX(-18vw);
+  transform: translateX(-7vw);
+}
+.plat:hover .plat__ok {
+  width: 20%;
+}
+.plat:hover .plat__info {
+  width: 67%;
+}
+.plat:hover .plat__ingredients {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 header {
