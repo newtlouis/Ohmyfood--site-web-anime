@@ -115,10 +115,6 @@ footer p, footer i {
   font-weight: bolder;
 }
 
-.plat__ingredients {
-  transition: all 1s 0.3s;
-}
-
 .plat__prix {
   font-weight: bolder;
 }
@@ -214,9 +210,9 @@ footer p, footer i {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  background-color: #fdfdfd;
+  background-color: white;
   border-radius: 4vw;
-  box-shadow: 1px 1vw 1vw #dadada;
+  box-shadow: 1px 1vw 2vw 1.5vw #ebebeb;
   animation: apparition 0.8s ease-out 0.5s backwards;
 }
 .plat--1 {
@@ -415,7 +411,7 @@ footer i {
 .menu {
   padding: 0 5%;
   border-radius: 12vw 12vw 0 0;
-  background-color: #e9e9e9;
+  background-color: #fafafa;
   position: relative;
   bottom: 13vw;
 }
