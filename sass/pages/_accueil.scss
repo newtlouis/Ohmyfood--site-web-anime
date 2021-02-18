@@ -69,4 +69,8 @@
 
 .restaurant i{
     font-size: 5vw;
+    &:hover{
+        font-size: 10vw;
+        // background-color: linear-gradient(to top left,$primary__color,$secondary__color);
+    }
 }

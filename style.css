@@ -44,7 +44,7 @@ a {
 
 h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: capitalize;
   font-weight: normal;
 }
@@ -66,7 +66,7 @@ h1 {
 
 .titre1__description {
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: lighter;
   color: #424242;
   text-align: center;
 }
@@ -82,12 +82,12 @@ h1 {
 }
 
 .restaurant__info__nom {
-  font-size: 5vw;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .restaurant__info__lieu {
-  font-size: 5vw;
+  font-size: 1.2rem;
   font-weight: 100;
 }
 
@@ -106,13 +106,19 @@ footer p, footer i {
   border-style: none none solid none;
   border-color: #99E2D0;
   font-size: 1.1rem;
+  font-weight: 10;
   padding-bottom: 1vw;
   margin-top: 8vw;
 }
 
 .plat__nom {
-  font-size: 1.2rem;
-  font-weight: bolder;
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
+.plat__ingredients {
+  font-size: 0.9rem;
+  font-weight: 300;
 }
 
 .plat__prix {
@@ -401,6 +407,9 @@ footer i {
 
 .restaurant i {
   font-size: 5vw;
+}
+.restaurant i:hover {
+  font-size: 10vw;
 }
 
 .menu__image {
