@@ -6,12 +6,20 @@
     background-color: $grey__backgroung;
     box-shadow: 10px 10px 10px black;
 
+    @media (min-width: $breakpoint-desktop) {
+        padding: 2vw;
+        }
+
 }
 
 .presentation{
     background-color: rgb(243, 243, 243);
     padding-bottom: 6vw;
     padding: 5vw 0;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding: 0;
+        }
 }
 
 .titre1__principal{
@@ -29,10 +37,16 @@
 .fonctionnements__bloc{
     padding: 12vw 8% ;
     background-color: $greylight__backgroung;
+    @media (min-width: $breakpoint-desktop) {
+        padding: 7vw 8%;
+        }
 }
 
 .fonctionnements__bloc .titre1{
     margin: 0 0 4vw 0;
+    @media (min-width: $breakpoint-desktop) {
+        margin: 0 35% 1vw 35%;
+        }
 }
 
 .fonctionnements__liste{
@@ -49,6 +63,10 @@
     padding: 13vw 5%;
     background-color: rgb(243, 243, 243);
 
+    @media (min-width: $breakpoint-desktop) {
+        padding: 7vw 5%;
+        }
+
 }
 
 .restaurants__bloc .titre1{
@@ -61,16 +79,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        }
 }
 
 .restaurant__info__nom{
     margin: 1.5vw 0;
 }
 
-.restaurant i{
-    font-size: 5vw;
-    &:hover{
-        font-size: 10vw;
-        // background-color: linear-gradient(to top left,$primary__color,$secondary__color);
-    }
-}
+
+// coeur et animation
+    .restaurant__coeur i{
+        font-size: 5vw;
+        color: black;
+        font-weight: 100;
+        @media (min-width: $breakpoint-desktop) {
+            font-size: 3vw;
+            }
+        
+        &:hover{
+            color:$primary__color;
+            font-weight: 900;
+        }
+       }

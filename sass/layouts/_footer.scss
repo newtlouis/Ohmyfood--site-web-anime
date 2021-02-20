@@ -10,6 +10,10 @@ footer{
     & i{
         margin-right: 2%;
         width: 5%;
+
+        @media (min-width: $breakpoint-desktop) {
+            margin-right: 0;
+            }
     }
     
 }
@@ -18,9 +22,10 @@ footer{
     margin-bottom: 3vw;
 }
 
-.footer__proposer,.footer__devenir,.footer__contact{
+.footer__proposer,.footer__devenir{
     display: flex;
     margin: 1vw 0;
+   
 }
 .footer__mentions{
     margin: 1.5vw 0 1vw 0;

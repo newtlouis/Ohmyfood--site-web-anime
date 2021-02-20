@@ -15,6 +15,11 @@
 
     background:linear-gradient(to top left,$primary__color,$secondary__color);
 
+    @media (min-width: $breakpoint-desktop) {
+        width: 40%;
+        margin: 0 30% 5vw 30%;
+        padding: 3vw 0;
+        }
 }
 
 // ETAPE FONCTIONNEMENT
@@ -31,6 +36,12 @@
     margin: 3vw 3% 4vw 7% ;
     border-radius: 5vw;
     box-shadow:1px 1vw 1vw rgb(223, 222, 222);
+
+    @media (min-width: $breakpoint-desktop) {
+        width: 50%;
+        padding: 2vw 3%;
+        margin: 2vw auto;
+        }
 
     background-color: rgb(248, 248, 248);
     
@@ -56,6 +67,9 @@
         margin: 0 4%;
         position: relative;
         left: -15.5%;
+        @media (min-width: $breakpoint-desktop) {
+            font-size: 2vw;
+            }
     }
 
     & i{
@@ -64,6 +78,9 @@
         margin: 0 4%;
         position: relative;
         left: -15.5%;  
+        @media (min-width: $breakpoint-desktop) {
+            font-size: 3vw;
+            }
     }
 
  
@@ -85,12 +102,21 @@
     box-shadow:1px 1vw 1vw rgb(233, 233, 233);
     background-color: $greylight__backgroung;
     cursor: pointer;
+
+    @media (min-width: $breakpoint-desktop) {
+        width: 40%;
+        margin: 2%;
+        }
     
     &__image{
     object-fit: cover;
     object-position: center;
     border-radius: 4vw 4vw 0 0;
     height: 45vw;
+
+    @media (min-width: $breakpoint-desktop) {
+        height: 20vw;
+        }
     }
 
       &__footer{
@@ -100,6 +126,8 @@
         align-items: center;
         padding: 2.5vw 5%;
     }
+
+
 
 }
 
