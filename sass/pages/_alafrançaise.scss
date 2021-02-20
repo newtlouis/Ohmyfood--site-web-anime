@@ -1,4 +1,13 @@
 
+.retour__accueil{
+    position: absolute;
+    top: 5vw;
+    left: 6vw;
+
+    color: $primary__color;
+    font-size: 6vw;
+}
+
 .menu__image{
     object-fit: cover;
     object-position: center;
