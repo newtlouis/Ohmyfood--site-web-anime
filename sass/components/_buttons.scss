@@ -11,9 +11,17 @@
     border-radius: 10vw;
     border-style: none;
     box-shadow:1px 1vw 1vw rgb(202, 202, 202);
+    cursor: pointer;
+
+    transition: box-shadow 0.3s ease-in-out;
 
 
     background:linear-gradient(to top left,$primary__color,$secondary__color);
+
+    &:hover{
+        box-shadow: 2px 2vw 2vw rgb(202, 202, 202);
+        background-color: lighten($color: $primary__color, $amount: 100);
+    }
 
     @media (min-width: $breakpoint-desktop) {
         width: 40%;

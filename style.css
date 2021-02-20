@@ -138,7 +138,13 @@ footer p, footer i {
   border-radius: 10vw;
   border-style: none;
   box-shadow: 1px 1vw 1vw #cacaca;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
+}
+.btn:hover {
+  box-shadow: 2px 2vw 2vw #cacaca;
+  background-color: white;
 }
 @media (min-width: 600px) {
   .btn {
