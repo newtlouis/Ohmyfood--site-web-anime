@@ -20,7 +20,6 @@
 
     &:hover{
         box-shadow: 2px 2vw 2vw rgb(202, 202, 202);
-        background-color: lighten($color: $primary__color, $amount: 100);
     }
 
     @media (min-width: $breakpoint-desktop) {
@@ -135,9 +134,64 @@
         padding: 2.5vw 5%;
     }
 
-
-
+    &__info__nom{
+        margin: 1.5vw 0;
+    }
 }
+    
+    
+    // coeur et animation
+    .restaurant__coeur{
+        width: 10%;
+        position: relative;
+        background-color: brown;
+    }
+
+    .coeur--creux i{
+        font-size: 5vw;
+        color: black;
+        font-weight: 100;
+        z-index:1;
+
+        position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;  
+            left: 0;
+        
+      
+
+        @media (min-width: $breakpoint-desktop) {
+            font-size: 3vw;
+            }
+       
+    }
+
+        .coeur--plein i{
+            background-color: blue;
+            font-size: 5vw;
+            color:$primary__color;
+            font-weight: 900;
+            opacity: 0;
+            z-index: 2;
+            transition: opacity 0.5s ease-in-out;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;  
+            left: 0;
+
+            &:hover{
+                opacity:1;
+            }
+        }
+           
+    
+
+
+
+
 
 // PLAT
 .plat{

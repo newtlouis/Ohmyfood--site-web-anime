@@ -87,22 +87,4 @@
         }
 }
 
-.restaurant__info__nom{
-    margin: 1.5vw 0;
-}
 
-
-// coeur et animation
-    .restaurant__coeur i{
-        font-size: 5vw;
-        color: black;
-        font-weight: 100;
-        @media (min-width: $breakpoint-desktop) {
-            font-size: 3vw;
-            }
-        
-        &:hover{
-            color:$primary__color;
-            font-weight: 900;
-        }
-       }
