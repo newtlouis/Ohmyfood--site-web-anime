@@ -6,10 +6,7 @@
     align-items: center;
     margin:3vw 20% 10vw 20%;
     padding: 3.8vw 3%;
-    cursor:pointer;
     position: relative;
-    z-index: 3;
-
       
     border-radius: 10vw;
     border-style: none;
@@ -18,7 +15,6 @@
 
     transition: box-shadow 0.3s ease-in-out;
 
-
     background:linear-gradient(to top left,$primary__color,$secondary__color);
 
     &:hover{
@@ -26,7 +22,6 @@
 
         .btn--hover{
             opacity:0.1;
-            transform: scale(1.15);
           }
     }
 
@@ -131,6 +126,11 @@
     box-shadow:1px 1vw 1vw rgb(233, 233, 233);
     background-color: $greylight__backgroung;
     cursor: pointer;
+
+    transition:box-shadow 0.3s ease-in-out;
+
+    &:hover{
+        box-shadow: 2px 2vw 2vw rgb(202, 202, 202);}
 
     @media (min-width: $breakpoint-desktop) {
         width: 40%;
