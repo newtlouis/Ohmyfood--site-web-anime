@@ -253,44 +253,43 @@
         padding: 4% 0;
 
         white-space: nowrap;
-        // overflow:hidden;
+        overflow:hidden;
         text-overflow: ellipsis;
-        transition: all 1s 0.3s ;
+        transition: width 1s 0.3s ease-in-out ;
     }
 
     &__ingredients{
         white-space: nowrap;
         overflow:hidden;
         text-overflow: ellipsis;
-
-        transition: all 1s 3s;
-    
     }
+
     &__nom{
         white-space: nowrap;
-        
+        overflow:hidden;
+        text-overflow: ellipsis;
     }
 
     &__prix{
         text-align: center;
         position: relative;
         top: 3vw;
-        left: 7vw;
-        padding: 0 2% 0 0;
+        left: 5vw;
+        padding: 0 2% 0 1vh;
         width: 10vw; 
-
-        transform: translateX(0);
-        transition: all 1s 0.3s ;  
+        
+        transition: transform 1s 0.3s ease-in-out;  
     }
 
     &__ok{
         background-color:$tertiary__color;
         width: 0;
-        transform: translateX(0);
-        transition: all 1s 0.3s ;
         text-align: center;
         position: relative;
         left: 7vw;
+
+        transform: translateX(0);
+        transition: all 1s 0.3s ease-in-out; 
     }
 
     & i{
@@ -299,8 +298,7 @@
         padding: 5.7vw 0;
                 
         transform: rotate(360deg);
-        transition: all 1s 0.3s;
-
+        transition: transform 1s 0.3s ease-in-out;
     }
 
     // ANIMATION HOVER
@@ -314,16 +312,11 @@
         .plat__ok{
             width: 20%;
         }
-        
 
         .plat__info{
             width: 67%;
         }
-        .plat__ingredients{
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+       
     }
 
 }

@@ -365,43 +365,44 @@ footer p, footer i {
   width: 80%;
   padding: 4% 0;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
-  transition: all 1s 0.3s;
+  transition: width 1s 0.3s ease-in-out;
 }
 .plat__ingredients {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: all 1s 3s;
 }
 .plat__nom {
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat__prix {
   text-align: center;
   position: relative;
   top: 3vw;
-  left: 7vw;
-  padding: 0 2% 0 0;
+  left: 5vw;
+  padding: 0 2% 0 1vh;
   width: 10vw;
-  transform: translateX(0);
-  transition: all 1s 0.3s;
+  transition: transform 1s 0.3s ease-in-out;
 }
 .plat__ok {
   background-color: #99E2D0;
   width: 0;
-  transform: translateX(0);
-  transition: all 1s 0.3s;
   text-align: center;
   position: relative;
   left: 7vw;
+  transform: translateX(0);
+  transition: all 1s 0.3s ease-in-out;
 }
 .plat i {
   font-size: 1.5rem;
   color: #fdfdfd;
   padding: 5.7vw 0;
   transform: rotate(360deg);
-  transition: all 1s 0.3s;
+  transition: transform 1s 0.3s ease-in-out;
 }
 .plat:hover i {
   transform: rotate(0deg);
@@ -414,11 +415,6 @@ footer p, footer i {
 }
 .plat:hover .plat__info {
   width: 67%;
-}
-.plat:hover .plat__ingredients {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 header {
@@ -610,6 +606,12 @@ footer i {
   left: 6vw;
   color: #9356DC;
   font-size: 6vw;
+}
+
+@media (min-width: 600px) {
+  article {
+    display: flex;
+  }
 }
 
 .menu__image {
