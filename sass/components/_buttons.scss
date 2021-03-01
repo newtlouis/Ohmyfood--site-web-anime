@@ -62,7 +62,8 @@
     box-shadow:1px 1vw 1vw rgb(223, 222, 222);
 
     @media (min-width: $breakpoint-desktop) {
-        width: 50%;
+        
+        width:25%;
         padding: 2vw 3%;
         margin: 2vw auto;
         }
@@ -144,7 +145,7 @@
     height: 45vw;
 
     @media (min-width: $breakpoint-desktop) {
-        height: 20vw;
+        height: 10vw;
         }
     }
 
@@ -154,10 +155,18 @@
         justify-content: space-between;
         align-items: center;
         padding: 2.5vw 5%;
+
+        @media (min-width: $breakpoint-desktop) {
+            padding: 1vw 5%;
+        }
     }
 
     &__info__nom{
         margin: 1.5vw 0;
+
+        @media (min-width: $breakpoint-desktop) {
+            margin: 0.5vw;
+        }
     }
 }
     
@@ -166,7 +175,7 @@
     .restaurant__coeur{
         width: 10%;
         position: relative;
-        background-color: brown;
+        
     }
 
     .coeur--creux i{
@@ -174,6 +183,7 @@
         color: black;
         font-weight: 100;
         z-index:1;
+        transition: opacity 0.5s ease-in-out;
 
         position: absolute;
             top: 0;
@@ -204,8 +214,19 @@
             bottom: 0;  
             left: 0;
 
+            @media (min-width: $breakpoint-desktop) {
+                font-size: 3vw;
+                }
+
             &:hover{
                 opacity:1;
+
+                .coeur--creux i{
+                    // opacity: 0;
+                    transform: scale(3);
+                }
+
+                
             }
         }
            
@@ -220,7 +241,6 @@
     
     display: flex;
     flex-direction: row;
-    justify-content:unsafe;
     align-items:center;
 
     width: 100%;
@@ -234,6 +254,16 @@
     background-color: white;
     border-radius: 4vw;
     box-shadow:1px 1vw 2vw 1.5vw rgb(235, 235, 235);
+
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: column;
+        width:80%;
+        margin: 5%;
+        padding: 0;
+        border-radius: 2vw;
+
+        // white-space:normal;
+        }
     
 
     // transition
@@ -252,6 +282,10 @@
         width: 80%;
         padding: 4% 0;
 
+        @media (min-width: $breakpoint-desktop) {
+            padding: 0;
+            }
+
         white-space: nowrap;
         overflow:hidden;
         text-overflow: ellipsis;
@@ -268,6 +302,9 @@
         white-space: nowrap;
         overflow:hidden;
         text-overflow: ellipsis;
+        @media (min-width: $breakpoint-desktop) {
+            margin: 0.5vw 0;
+                  }
     }
 
     &__prix{
@@ -276,7 +313,15 @@
         top: 3vw;
         left: 5vw;
         padding: 0 2% 0 1vh;
-        width: 10vw; 
+        width: 10vw;
+        
+        @media (min-width: $breakpoint-desktop) {
+            margin: 0.5vw 0;
+            padding: 0;
+            top: 0;
+            left: 35%;
+            padding: 0;
+            }
         
         transition: transform 1s 0.3s ease-in-out;  
     }
@@ -288,6 +333,10 @@
         position: relative;
         left: 7vw;
 
+        @media (min-width: $breakpoint-desktop) {
+            display: none;
+                  }
+
         transform: translateX(0);
         transition: all 1s 0.3s ease-in-out; 
     }
@@ -296,6 +345,13 @@
         font-size: 1.5rem;
         color: $greylight__backgroung;      
         padding: 5.7vw 0;
+
+        @media (min-width: $breakpoint-desktop) {
+            padding: 0;
+            display: none;
+            }
+
+        
                 
         transform: rotate(360deg);
         transition: transform 1s 0.3s ease-in-out;
@@ -308,13 +364,26 @@
         }
         .plat__ok,.plat__prix{
             transform: translateX(-7vw);
+
+            @media (min-width: $breakpoint-desktop) {
+                transform: translateX(0);
+                      }
         }
         .plat__ok{
             width: 20%;
+            transform: translateX(-7vw);
+
+            @media (min-width: $breakpoint-desktop) {
+                width: 0;
+                      }
         }
 
         .plat__info{
             width: 67%;
+            
+            @media (min-width: $breakpoint-desktop) {
+                width: 80%;
+                      }
         }
        
     }

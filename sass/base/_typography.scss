@@ -6,7 +6,7 @@ html{
     font-size: 4vw;
 
         @media (min-width: $breakpoint-desktop) {
-        font-size: 2vw;
+        font-size: 1.5vw;
         }
 }
 
@@ -78,6 +78,10 @@ h1{font-family: 'Shrikhand', cursive;
 .restaurant__info__nom{
     font-size: 1.2rem;
     font-weight: bold;
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 1rem;
+        }
 }
 
 .restaurant__info__lieu{

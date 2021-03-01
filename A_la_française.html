@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2bb2f2a2a8.js" crossorigin="anonymous"></script>
-    <title>ohmyfood - A la française</title>
+    <title>ohmyfood - La note enchantée</title>
 </head>
 <body>
 
@@ -24,14 +24,19 @@
 
     <a href="index.html" class="retour__accueil"><i class="fas fa-arrow-circle-left"></i></a>
 
-    <article>
-    <img src="images/3.jpg" alt="plat appétissant" class="menu__image">
 
-    <div class="menu">
-        <div class="menu__header">
-            <h1>à la française</h1>
-            <i class="far fa-heart"></i>
-        </div>
+    <img src="images/2b.jpg" alt="plat appétissant" class="article__image">
+
+    <article>
+        <div class="article__header">
+            <h1>la note enchantée</h1>
+            <div class="restaurant__coeur">
+                <div class="coeur--creux"><i class="fas fa-heart"></i></div>
+                <div class="coeur--plein"><i class="fas fa-heart"></i></div>
+            </div>
+</div>
+
+        <div class="menu">
 
         <div class="entrees">
             <div class="entrees__titre">entrées</div>
@@ -52,7 +57,7 @@
                     <div class="plat__nom">Velouté de légumes d'antan</div>
                     <div class="plat__ingredients">Carottes, panais, topinambourg</div>
                 </div>
-                <div class="plat__prix">35€</div>
+                <div class="plat__prix">25€</div>
                 <div class="plat__ok">
                     <i class="fas fa-check-circle"></i>
                 </div>
@@ -60,8 +65,8 @@
 
             <div class="plat plat--3">
                 <div class="plat__info">
-                    <div class="plat__nom">Soupe à l'oignon</div>
-                    <div class="plat__ingredients">Revisitée</div>
+                    <div class="plat__nom">Tartare de poulpe acidulé</div>
+                    <div class="plat__ingredients">Aux zests d'orange</div>
                 </div>
                 <div class="plat__prix">25€</div>
                 <div class="plat__ok">
@@ -140,10 +145,10 @@
             </div>
         </div>
     </div>
-
-</article>
-
-    <button class="btn">Commander</button>
+    </article>
+    <button class="btn">Commander
+        <div class="btn--hover"></div>
+    </button>
 
         <!-- FOOTER -->
 

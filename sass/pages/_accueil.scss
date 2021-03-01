@@ -41,8 +41,9 @@
 .fonctionnements__bloc{
     padding: 12vw 8% ;
     background-color: $greylight__backgroung;
+
     @media (min-width: $breakpoint-desktop) {
-        padding: 7vw 8%;
+        padding: 4vw 3%;
         }
 }
 
@@ -58,6 +59,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 
