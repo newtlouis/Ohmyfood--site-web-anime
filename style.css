@@ -702,15 +702,31 @@ footer i {
   }
 }
 
-.article__image {
-  object-fit: cover;
-  object-position: center;
+.image--la__note__enchantee, .image--a__la__francaise, .image--a__la_palette__du__gout, .image--le__delice__des__sens {
   height: 70vw;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 800px) {
-  .article__image {
+  .image--la__note__enchantee, .image--a__la__francaise, .image--a__la_palette__du__gout, .image--le__delice__des__sens {
     height: 40vw;
   }
+}
+
+.image--la__note__enchantee {
+  background-image: url(images/2.jpg);
+}
+
+.image--a__la__francaise {
+  background-image: url(images/3.jpg);
+}
+
+.image--a__la_palette__du__gout {
+  background-image: url(images/1.jpg);
+}
+
+.image--le__delice__des__sens {
+  background-image: url(images/4.jpg);
 }
 
 article {
