@@ -15,7 +15,7 @@
 }
 
 body {
-  background-color: #e9e9e9;
+  background-color: #fafafa;
 }
 
 * {
@@ -172,6 +172,11 @@ footer p, footer i {
   bottom: 0;
   opacity: 0;
   transition: opacity 0.3s;
+}
+
+.btn--restaurant {
+  position: relative;
+  bottom: 10vw;
 }
 
 .fonctionnement {
