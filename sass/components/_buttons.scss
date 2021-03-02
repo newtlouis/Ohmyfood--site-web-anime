@@ -1,33 +1,59 @@
 
 // BOUTON ACCUEIL
 
-.btn{
-    width: 60%;
-    align-items: center;
-    margin:3vw 20% 10vw 20%;
-    padding: 3.8vw 3%;
+.cadre__btn{
     position: relative;
-      
-    border-radius: 10vw;
-    border-style: none;
-    box-shadow:1px 1vw 1vw rgb(202, 202, 202);
+    width: 63%;
+    height: 13vw;
+    margin:9vw 20% 13vw 20%;
+
+    @media (min-width: $breakpoint-desktop) {
+        width: 40%;
+        margin: 0 auto;
+        }
+    
     cursor: pointer;
 
-    transition: box-shadow 0.3s ease-in-out;
-
-    background:linear-gradient(to top left,$primary__color,$secondary__color);
-
     &:hover{
+        .btn{
         box-shadow: 2px 2vw 2vw rgb(202, 202, 202);
+
+        }
 
         .btn--hover{
             opacity:0.1;
           }
     }
 
+}
+
+.btn{
+    // align-items: center;
+    padding: 3.8vw 5.5vw;
+    width: 100%;
+
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+
+    border-radius: 10vw;
+    border-style: none;
+    box-shadow:1px 1vw 1vw rgb(202, 202, 202);
+    cursor: pointer;
+
+      
+
+    transition: box-shadow 0.3s ease-in-out;
+
+    background:linear-gradient(to top left,$primary__color,$secondary__color);
+
+   
+
     @media (min-width: $breakpoint-desktop) {
-        width: 40%;
-        margin: 0 30% 5vw 30%;
+        // width: 40%;
+        margin: 0 0 5vw 0;
         padding: 3vw 0;
         }
 }
@@ -46,9 +72,20 @@
     transition: opacity 0.3s;
 }
 
-.btn--restaurant{
-    position: relative;
+.cadre__btn--restaurant{
+    
     bottom: 10vw;
+    margin-bottom: 5vw;
+    margin-top: 4vw;
+
+    @media (min-width: $breakpoint-desktop) {
+        width: 40%;
+        bottom: 5vw;
+    }
+}
+
+.btn--restaurant{
+    width: 100%;
 }
 
 // ETAPE FONCTIONNEMENT
