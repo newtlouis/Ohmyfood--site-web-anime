@@ -130,11 +130,18 @@ footer{
 .plat__nom{
     font-size: 1.1rem;
     font-weight: 500;
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 0.8rem;
+        }
 }
 
 .plat__ingredients{
     font-size: 0.9rem;;
     font-weight: 300;
+
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 0.7rem;
+        }
 
 }
 
@@ -142,4 +149,7 @@ footer{
 
 .plat__prix{
     font-weight: bolder;
+    @media (min-width: $breakpoint-desktop) {
+        font-size: 0.7rem;
+        }
 }

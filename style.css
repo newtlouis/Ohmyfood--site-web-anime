@@ -124,14 +124,29 @@ footer p, footer i {
   font-size: 1.1rem;
   font-weight: 500;
 }
+@media (min-width: 800px) {
+  .plat__nom {
+    font-size: 0.8rem;
+  }
+}
 
 .plat__ingredients {
   font-size: 0.9rem;
   font-weight: 300;
 }
+@media (min-width: 800px) {
+  .plat__ingredients {
+    font-size: 0.7rem;
+  }
+}
 
 .plat__prix {
   font-weight: bolder;
+}
+@media (min-width: 800px) {
+  .plat__prix {
+    font-size: 0.7rem;
+  }
 }
 
 .cadre__btn {
@@ -385,11 +400,11 @@ footer p, footer i {
 }
 @media (min-width: 800px) {
   .plat {
-    flex-direction: column;
     width: 80%;
+    height: 5vw;
     margin: 5%;
-    padding: 0;
-    border-radius: 2vw;
+    padding: 0 0 0 2%;
+    border-radius: 1.2vw;
   }
 }
 .plat--1 {
@@ -430,31 +445,15 @@ footer p, footer i {
   text-overflow: ellipsis;
   transition: width 1s 0.3s ease-in-out;
 }
-@media (min-width: 800px) {
-  .plat__info {
-    padding: 0;
-  }
-}
 .plat__ingredients {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@media (min-width: 800px) {
-  .plat__ingredients {
-    white-space: normal;
-  }
-}
 .plat__nom {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-@media (min-width: 800px) {
-  .plat__nom {
-    margin: 0.5vw 0;
-    white-space: normal;
-  }
 }
 .plat__prix {
   text-align: center;
@@ -467,11 +466,9 @@ footer p, footer i {
 }
 @media (min-width: 800px) {
   .plat__prix {
-    margin: 0.5vw 0;
-    padding: 0;
-    top: 0;
-    left: 35%;
-    padding: 0;
+    top: 1vw;
+    left: 1vw;
+    width: 3vw;
   }
 }
 .plat__ok {
@@ -485,7 +482,7 @@ footer p, footer i {
 }
 @media (min-width: 800px) {
   .plat__ok {
-    display: none;
+    left: 1vw;
   }
 }
 .plat i {
@@ -497,8 +494,7 @@ footer p, footer i {
 }
 @media (min-width: 800px) {
   .plat i {
-    padding: 0;
-    display: none;
+    font-size: 1rem;
   }
 }
 .plat:hover i {
@@ -509,25 +505,19 @@ footer p, footer i {
 }
 @media (min-width: 800px) {
   .plat:hover .plat__ok, .plat:hover .plat__prix {
-    transform: translateX(0);
+    transform: translateX(-1vw);
   }
 }
 .plat:hover .plat__ok {
   width: 20%;
-  transform: translateX(-7vw);
 }
 @media (min-width: 800px) {
   .plat:hover .plat__ok {
-    width: 0;
+    width: 20%;
   }
 }
 .plat:hover .plat__info {
   width: 67%;
-}
-@media (min-width: 800px) {
-  .plat:hover .plat__info {
-    width: 80%;
-  }
 }
 
 header {
